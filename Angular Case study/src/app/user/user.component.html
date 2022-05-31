@@ -1,0 +1,146 @@
+<div >
+     <button  class="btn btn-primary" mat-raised-button (click)="history()" ><h2>History </h2></button>
+     <button  class="btn btn-primary" mat-raised-button (click)="Search()" ><h2>Search </h2></button>
+    <div *ngIf="!ishistory">
+     <form [formGroup]="formData" (ngSubmit)="onClickSubmit()">
+<label>
+    From 
+</label>
+<input type="text" formControlName="FromPlace" required/>
+<label>
+    To 
+</label>
+<input type="text" formControlName="ToPlace" required/>
+<div class="btn">
+<button class="btn btn-primary" value="submit">Search</button>
+</div>
+   </form>
+   
+
+<div class="row" *ngIf="IsSearch">
+    <div class="table-responsive " style="padding-top: 15px;">
+      <table id="dtDynamicVerticalScrollExample"
+        class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+      <thead class="bg-info">
+        <tr>              
+            <th class="th-sm"> flightNumber</th>
+            <th class="th-sm"> airlineName</th>
+            <th class="th-sm"> From Place</th>
+            <th class="th-sm"> To Place</th>
+            <th class="th-sm"> Meal</th>
+            <th class="th-sm"> Ticket cost</th>
+        </tr>
+      </thead>            
+   
+     <tr *ngFor="let users of searchdata">
+    
+        <td>{{users.flightNumber}}</td> 
+        <td>{{users.airlineName}}</td> 
+        <td>{{users.fromPlace}}</td>
+        <td>{{users.toPlace}}</td>
+        <td>{{users.meal}}</td>
+         <td>{{users.ticketCost}}</td>
+         <td style="color: brown;" ><button mat-raised-button class="btn btn-danger" (click)="opendeleteDialog(users.flightNumber)">Book Ticket </button></td>
+  
+  </tr>
+  </table>
+    </div>
+</div>
+  
+
+</div>
+
+</div>
+<div class="row" *ngIf="ishistory">
+    <form [formGroup]="formData1" (ngSubmit)="PNRData()">
+        <label>
+            Enter the PNR 
+        </label>
+        <input type=number formControlName="PNR" required/>
+        <button mat-raised-button class="btn btn-danger" >History  </button>
+    </form>
+    <div >
+        <table id="dtDynamicVerticalScrollExample"
+        class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+      <thead class="bg-info">
+        <tr>              
+            <th class="th-sm"> PNR</th>
+            <th class="th-sm">flightNumber</th>
+            <th class="th-sm"> Name</th>
+            <th class="th-sm"> bookingDate</th>
+            <th class="th-sm"> gender</th>
+            <th class="th-sm"> Age</th>
+            <th class="th-sm"> Price</th>
+        </tr>
+      </thead>            
+      <tr *ngFor="let users of bookingDetails">
+        
+      <td>{{users.pnr}}</td> 
+      <td>{{users.flightNumber}}</td> 
+      <td>{{users.name}}</td>
+      <td>{{users.bookingDate}}</td>
+      <td>{{users.gender}}</td>
+      <td>{{users.age}}</td>
+       <td>{{users.price}}</td>
+       <td style="color: brown;" ><button mat-raised-button class="btn btn-danger" (click)="cancel(users.pnr)">Cancel Ticket </button></td>
+    
+    </tr>
+     
+       </table>
+    </div>
+</div>
+<div *ngIf="isbooked">
+    <h2 style="color: brown;"> Enter Passanger Details</h2>
+    <form [formGroup]="formData2" (ngSubmit)="onClickSubmit()">
+        <label style="margin-right: 100px;">
+            FlightNumber
+        </label>
+        <input style="margin-right: 20px;" type="text" formControlName="FlightNumber" [disabled]="true" required/>
+        <label style="margin-right: 80px;">
+            Name
+        </label>
+        <input  type="text" formControlName="Name" required/>
+        <label style="margin-right: 50px;">
+            Age
+        </label>
+        <input style="margin-right: 50px;" type=number formControlName="Age" required/>
+        <label style="margin-right: 140px;">
+            Gender
+        </label>
+        <input type=text formControlName="Gender" required/>
+        
+        <label style="margin-right:30px;">
+            BusinessClassSeats
+        </label>
+        <input  type=number formControlName="BusinessClassSeats" required/>
+        <label>
+            NonBusinessClassSeats
+        </label>
+        <input type=number formControlName="NonBusinessClassSeats" required/>
+        <label style="margin-right:150px;">
+            Coupon
+        </label>
+        <select formControlName="CouponCode">
+            <option value="SPECIAL" selected>
+                SPECIAL
+            </option>
+            <option value="NEW">
+                NEW
+            </option>
+            <option value="JUMBO">
+                JUMBO
+            </option>
+        </select>
+        <label>
+            Booking Date 
+        </label>
+        <input type=Date formControlName="BookingDate" required/>
+        <button mat-raised-button class="btn btn-danger" (click)="BookTicket()">Book  </button>
+    </form>
+</div>
+
+
+	
+
+
+

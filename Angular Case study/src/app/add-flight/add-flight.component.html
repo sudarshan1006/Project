@@ -1,0 +1,35 @@
+<h2 style="color:#ff0000 "> Add/Schedule Flight</h2>
+
+<div class="container">
+    <form [formGroup]="formData" (ngSubmit)="onClickSubmit()">
+        <label>Flight number  </label> 
+        <input type='number' formControlName="FlightNumber" />
+  <label>Flight Name  </label> 
+        <input type='text' formControlName="AirlineName" />
+        <label>From Place  </label>
+        <input type='text' formControlName="FromPlace" />
+
+<label>To Place </label>
+<input type='text' formControlName="ToPlace" />
+<label>Start Time </label>
+
+<input type='date' formControlName="StartDateTime" />
+
+<label style="margin-left: 43px;">End Time  </label>
+<input type='date' formControlName="EndDateTime"/>
+<label>Scheduled Days  </label>
+<input type='text' formControlName="SecheduledDays" />
+
+
+<label>business Class Seats </label>
+<input type='text' formControlName="BusinessClassSeats"/>
+<label>Price  </label>
+<input type='number' formControlName="TicketCost" />
+<label>Number of rows </label>
+<input type='text' formControlName="NumberOfRows"/>
+<label>meal </label>
+<input type='text' formControlName="Meal"/>
+<button value="submit">Submit</button>
+    </form>
+</div>
+

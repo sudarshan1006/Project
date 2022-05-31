@@ -1,0 +1,24 @@
+<body>
+    <div  class="center" >
+        <form [formGroup]="formData" (ngSubmit)="onClickSubmit()" >
+    
+        <h1>Login</h1>
+        
+    <div class="txt_field">
+        
+        <input type="text"  formControlName="EmailId" autofocus="off" placeholder="User Name" required/>
+        <span style="color:red" *ngIf="uname && uname.invalid && uname.touched" > Email id is not valid</span>
+  
+        
+    </div>
+    <div class="txt_field">
+        
+        <input type="password" formControlName="Password" autofocus="off" placeholder="Password" required/>
+        <span style="color:red" *ngIf="Password  && Password.invalid && Password.touched"> Password is invalid</span>
+  
+  
+    </div>
+    <div class="button_field">
+        <button type="submit" class="btn_field" >Login</button>
+        
+        </div>

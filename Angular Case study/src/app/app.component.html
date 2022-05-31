@@ -1,0 +1,19 @@
+
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Flight Booking System</span>
+    <span class="example-spacer"></span>
+    <button class="btn" mat-raised-button class="btn btn-Info" (click)="Login()">Log In</button>
+    <button class="btn" mat-raised-button class="btn btn-primary" (click)="Registration()">Register</button>
+    <button class="btn" mat-raised-button class="btn btn-danger" (click)="Login()" >Log Out</button>
+    <!--<button mat-button (click)="openDialog()"></button>-->
+  </mat-toolbar>
+</p>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+  </mat-drawer>
+  <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+</mat-drawer-container>

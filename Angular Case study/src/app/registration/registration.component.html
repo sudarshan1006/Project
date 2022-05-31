@@ -1,0 +1,32 @@
+<body>
+<div>
+    <h1> Sign Up!</h1>
+</div>
+<div style="color: black; background-color:palevioletred;">
+    
+    <form novalidate [formGroup]="formData" (ngSubmit)="onClickSubmit()" autofocus="off">
+    <label>Name  </label> 
+          <input type='text' formControlName="Name" />
+          <label>Email Id </label>
+          <input type='text' formControlName="EmailId" />
+          
+  
+  <label>Password  </label>
+  <input type='password' formControlName="Password" />
+  <label>ContactNumber </label>
+  
+  <input type='number' formControlName="ContactNumber" />
+  
+  <label>Age </label>
+  <input type='number' formControlName="Age"/>
+  <label>Gender </label>
+  <input type='text' formControlName="Gender"/>
+  
+  <div class="button_field">
+    <button type="submit" style="color: blue" class="btn_field" [disabled]="formData.invalid">Register</button>
+</div>  
+</form>
+    </div>
+
+    
+ 

@@ -1,0 +1,82 @@
+
+<section>
+    <div class="example-button-row">
+      <button mat-raised-button class="btn btn-primary" (click)="openAddAirlineDialog()"><h3>Add Aiirline</h3></button>
+        <button mat-raised-button class="btn btn-primary" (click)="openDialog()"><h3>Add/Schedule Flight</h3></button>
+        <button mat-raised-button class="btn btn-primary" (click)="ManageSchedule()"><h3>Manage Schedule</h3></button>
+        <button mat-raised-button class="btn btn-primary" (click)="ManageAirline()"><h3>Manage Airline</h3></button>
+     </div>
+    
+
+     <div class="row" *ngIf="isAirline">
+       <h2 color="red"> Flight Details</h2>
+      <table id="dtDynamicVerticalScrollExample"
+        class="table table-striped table-bordered table-sm" cellspacing="0" width="70%">
+        <thead class="bg-info">  
+        <tr >
+              <th>Flight Number</th>
+              <th> Airline Name</th>
+              <th>contactNumber</th>
+            
+              
+      </tr> 
+      </thead>
+           
+                  
+   
+     <tr *ngFor="let users of airlineData">
+    
+        <td>{{users.flightNumber}}</td>  
+         <td> {{users.airlineName}}</td>
+          <td> {{users.contactNumber}}</td>
+  
+          
+  
+  </tr>
+  </table>
+  </div>
+
+     <div class="row" *ngIf="isschedule">
+      <h2 color="red"> Schedule Details</h2>
+    <table id="dtDynamicVerticalScrollExample"
+      class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+      <thead class="bg-info">  
+      <tr >
+            <th>Flight Number</th>
+            <th> Airline Name</th>
+            <th>From Place</th>
+            <th> To Place</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th> Secheduled Days</th>
+            <th>Business ClassSeats</th>
+            <th>Price</th>
+            <th> Number of Rows</th>
+            <th>Meal</th>
+            <th>Active</th>
+    </tr> 
+    </thead>
+         
+                
+ 
+   <tr *ngFor="let users of listUser">
+  
+      <td>{{users.flightNumber}}</td>  
+       <td> {{users.airlineName}}</td>
+       <td> {{users.fromPlace}}</td>
+        <td> {{users.toPlace}} </td>
+        <td>   {{users.startDateTime}} </td>
+        <td>  {{users.endDateTime}}</td>
+      <td>  {{users.secheduledDays}}</td>
+        <td>  {{users.businessClassSeats}}</td>
+        <td> {{users.ticketCost}}</td>
+        <td> {{users.numberOfRows}}</td>
+         <td> {{users.meal}}</td>
+         <td> {{users.deleted}}</td>
+
+         <td style="color: brown;" ><button mat-raised-button class="btn btn-danger" (click)="opendeleteDialog(users.flightNumber)">Block/UnBlock</button></td>
+
+</tr>
+</table>
+</div>
+

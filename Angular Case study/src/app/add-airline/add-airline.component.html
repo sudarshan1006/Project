@@ -1,0 +1,16 @@
+<h2 style="color:#ff0000 "> Add Airline</h2>
+
+<div class="container">
+    <form [formGroup]="formData" (ngSubmit)="onClickSubmit()">
+  <label>Flight Number </label> 
+        <input type='number' formControlName="FlightNumber" />
+        <label>Airline Name  </label>
+        <input type='text' formControlName="AirlineName" />
+
+<label>Contact Number</label>
+<input type='number' formControlName="ContactNumber" />
+<div>
+<button value="submit">Submit</button>
+</div>
+    </form>
+</div>
