@@ -1,0 +1,13 @@
+C:\Users\cogdotnet18\source\repos\Producer\Producer\bin\Debug\netcoreapp2.1\Producer.deps.json
+C:\Users\cogdotnet18\source\repos\Producer\Producer\bin\Debug\netcoreapp2.1\Producer.runtimeconfig.json
+C:\Users\cogdotnet18\source\repos\Producer\Producer\bin\Debug\netcoreapp2.1\Producer.runtimeconfig.dev.json
+C:\Users\cogdotnet18\source\repos\Producer\Producer\bin\Debug\netcoreapp2.1\Producer.dll
+C:\Users\cogdotnet18\source\repos\Producer\Producer\bin\Debug\netcoreapp2.1\Producer.pdb
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.csproj.AssemblyReference.cache
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.AssemblyInfoInputs.cache
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.AssemblyInfo.cs
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.dll
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.pdb
+C:\Users\cogdotnet18\source\repos\Producer\Producer\obj\Debug\netcoreapp2.1\Producer.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.csproj.AssemblyReference.cache
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.AssemblyInfoInputs.cache
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.AssemblyInfo.cs
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\bin\Debug\netcoreapp2.1\RabbitMQConsumer.deps.json
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\bin\Debug\netcoreapp2.1\RabbitMQConsumer.runtimeconfig.json
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\bin\Debug\netcoreapp2.1\RabbitMQConsumer.runtimeconfig.dev.json
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\bin\Debug\netcoreapp2.1\RabbitMQConsumer.dll
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\bin\Debug\netcoreapp2.1\RabbitMQConsumer.pdb
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.dll
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.pdb
+C:\Users\cogdotnet18\source\repos\RabbitMQConsumer\RabbitMQConsumer\obj\Debug\netcoreapp2.1\RabbitMQConsumer.genruntimeconfig.cache
